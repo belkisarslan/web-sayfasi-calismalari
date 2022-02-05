@@ -1,4 +1,4 @@
 <h1>Konseptli İletişim Sayfası Örneği</h1>
-<video controls>
- <source src="video.mp4" type="video/mp4">
-</video>
+<img src="img1.png"></img>
+<hr>
+<img src="img2.png"></img>
