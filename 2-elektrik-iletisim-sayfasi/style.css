@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+body{
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+}
+body.sunny{
+    background: linear-gradient(to bottom, #000, darkorange);
+}
+body.sunny .light::after{
+    background-color: orange;
+}
+.light{
+    width: 0px;
+    height: 0px;
+    border-bottom: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+.light::before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 10px;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    bottom: -8px;
+}
+.light::after{
+    position: absolute;
+    z-index: -1;
+    content: "";
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    box-shadow: 5px 5px 10px rgba(255,140,0);
+    bottom: -120px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+.light input{
+    position: absolute;
+    opacity: 0;
+}
+.light span:nth-of-type(2){
+    display: none;
+}
+.light input:checked + span{
+    display: none;
+}
+.light input:checked + span + span{
+    display: inline-block;
+}
+h1{
+    background-color: #000;
+    color: rgba(255,140,0);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(255,140,0);
+}
+.wrapper {
+    display: inline-flex;
+}
+.wrapper .icon {
+    margin: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.wrapper .icon a {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-color: #000;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    color: rgba(255,140,0);
+    box-shadow: 5px 5px 10px rgba(255,140,0);
+    
+}
+.wrapper .icon a i {
+    font-size: 25px;
+    line-height: 60px;
+}
+.wrapper .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background-color: #000;
+    color: rgba(255,140,0);
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,0.55,0.265,1.55);
+}
+.wrapper .icon:hover .tooltip {
+    top: -80px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .icon .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background:#000;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
