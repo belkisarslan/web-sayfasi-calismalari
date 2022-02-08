@@ -1,0 +1,345 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+}
+body{
+  background: linear-gradient( to left, olive,khaki);
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+  font-size: x-large;
+  height: auto;
+}
+
+.header {
+  background: linear-gradient( to right, khaki, olive);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.icons {
+  position: absolute; 
+  padding-top: 0px;
+  right: 40px;
+  top: 20px;
+  cursor: default;
+}
+.icons p {
+  margin-bottom: 0;
+  color: khaki;
+}
+.icons i {
+  cursor: pointer;
+}
+.icons i:hover {
+  opacity: 0.5;
+}
+.header h1 {
+  color: saddlebrown;
+}
+
+.header h1 + p {
+  color: saddlebrown;
+}
+
+.topnav {
+  overflow: hidden;
+  background: linear-gradient( to right, saddlebrown, khaki);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.topnav a:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+
+h2 {
+  padding-left: 60px;
+}
+
+.container {
+  height: 200px;
+  background-color:khaki;
+  border: 1px solid saddlebrown;
+  border-radius: 3px;
+  position: relative;
+}
+.swiper {
+  height: 200px;
+  z-index: 0;
+}
+.swiper-slide p {
+  position: absolute;
+  left: 80px;
+  top: 60px;
+  margin-top: 10px;
+  font-size: xx-large;
+  
+}
+.swiper-button-prev {
+  color: saddlebrown;
+}
+.swiper-button-next {
+  color: saddlebrown;
+}
+
+.column {
+ height: 300px; 
+ float: initial;
+ width: 300px;
+ padding: 15px;
+ border-radius: 5px;
+ position: relative;
+ cursor: default;
+}
+.column .buy {
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  display: none;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: saddlebrown;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.column:hover {
+  background-color: khaki;
+
+}
+.column:hover .buy {
+  display: block;
+}
+.buy:hover {
+ padding: 10px;
+ color: white;
+ text-shadow: 2px 2px 4px #000000;
+ background-color: saddlebrown;
+}
+.column .buy:active {
+  border: 4px solid white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+@media screen and (max-width:450px) {
+ 
+ .finish a {
+   display: block;
+   margin: 5px;
+ }
+} 
+@media screen and (max-width:600px) {
+    .column {
+      width: 300px;
+    }
+    .icons {
+      position: static;
+    }
+   }
+@media screen and (max-width: 700px) {
+    .column-sepet {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+   }
+  }
+@media screen and (max-width:800px) {
+  .swiper-slide p {
+    left: 50px;
+    top: 10px;
+  }
+  
+} 
+
+.img, .img img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.img:hover {
+  opacity: 0.5;
+}
+
+button {
+position: fixed;
+bottom: 15px;
+right: 15px;
+border: khaki;
+background-color: khaki;
+border-radius: 5px;
+z-index: 2;
+}
+button:hover {
+background-color: saddlebrown;
+color: white;
+border: 2px solid khaki;
+}
+button:active {
+border: 5px solid khaki;
+}
+
+.page h3 {
+background: linear-gradient( to right, saddlebrown, khaki);
+color: white;
+padding: 20px;
+margin: 0;
+position: sticky;
+top: 60px;
+}
+.page .text {
+height: auto;
+}
+
+.text{
+padding: 100px 25px 25px 25px;
+}
+
+
+
+.column-sepet {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  }
+.column-sepet1 {
+  float: left;
+  width: 100%;
+  padding: 20px;
+}
+.row-sepet {margin: 0 -5px;}
+.row-sepet:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.img-sepet{
+  height: 300px;
+  width: 300px;
+}
+.img-sepet img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color:khaki;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  } 
+.sepet-btn {
+  background-color: saddlebrown;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  }
+.sepet-btn:hover {
+  opacity: 0.8;
+  }
+.sepet-btn:active {
+    background-color: olive;
+  }
+
+.finish {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:khaki;
+  margin: 20px;
+  border-radius: 5px;
+}
+.finish a {
+    border: 1px solid black;
+    background-color: saddlebrown;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    top: 50%;
+  }
+.finish a:hover {
+    opacity: 0.8;
+  }
+
+.sepet-list {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 5px;
+  }
+.sepet-list input {
+  left: 10px;
+  background-color: khaki;
+}
+.sepet-list i {
+  float: right;
+  cursor: pointer;
+}
+.sepet-list i:hover {
+  color: red;
+}
+.container-tarif {
+  height: auto;
+}
+.container-tarif .row {
+  margin: 10px;
+  padding: 10px;
+}
+.row .col-4 {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 2px;
+  border-radius: 5px;
+  
+}
+.row .col-8 {
+  background-color: khaki;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: auto;
+  margin: 2px;
+  border-radius: 5px;
+}
+.footer {
+  background: linear-gradient( to right, saddlebrown, khaki);
+  margin-top: auto;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: large;
+  color:khaki;
+  
+}
+  
+
+  
+  
