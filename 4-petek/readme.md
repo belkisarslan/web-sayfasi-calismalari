@@ -11,6 +11,9 @@
 <hr>
 <br>
 <img src="petek3.png">
+<br>
+<hr>
 
 
 Live Demo: https://belkisarslan.github.io/web-sayfasi-calismalari/4-petek/petek.html
+
