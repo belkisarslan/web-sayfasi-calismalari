@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: x-large;
+    font-family: 'Balsamiq Sans', cursive;
+  }
+  body{
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, chocolate, darkorange   );
+    display: grid;
+  }
+  .info{
+    background-color: #fff;
+    color: #000;
+    height: 80px;
+    width: 450px;
+    margin: 50px auto;
+    border-radius: 25%;
+    }
+  .info p {
+    text-align: center;
+    padding: 10px;
+  }
+  .info h1{
+    text-align: center;
+    padding: 20px;
+  }
+  .petek {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    }
+  .hexagon {
+    position: absolute;
+    transform: translate(-100%, -220%);
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 57.74px;
+    /* background-image: linear-gradient(to bottom, chocolate, darkorange   ); */
+    background-color: #fff;
+    margin: 28.87px 0;
+    color: #000;
+    }
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 28.87px solid #fff;
+  }
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    left: 0;
+    border-top: 28.87px solid #fff;
+  }
+  .hexagon:nth-child(2) {
+    left: 110px;}
+  .hexagon:nth-child(3) {
+    left: -55px;
+    top: 95px;
+  }
+  .hexagon:nth-child(4) {
+    left: 55px;
+    top: 95px;
+  }
+  .hexagon:nth-child(5) {
+    left: 165px;
+    top: 95px;
+  }
+  .hexagon:nth-child(6) {
+    top: 190px;
+  }
+  .hexagon:nth-child(7) {
+    left: 110px;
+    top: 190px;
+  }
+  .title-center {
+    text-align: center;
+    padding-top: 12px;
+    color: #000;
+    cursor: default;
+  }
+  
+  .hexagon a {
+    text-decoration: none;
+    position: relative;
+  }
+  .hexagon a i {
+    color: #000;
+  }
+  .hexagon a i:hover {
+    opacity: 0.6;
+  }
+  .hexagon a:hover:before {
+    content: attr(data-tooltip);
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 12px;
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 16px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .hexagon a[data-left]:hover:before {
+    left: -300px
+  }
+  .hexagon a[data-right]:hover:before {
+    right: -400px
+  }
+  .right-arrow {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #fff;
+    border-radius: 25%;
+    padding: 10px;
+  }
+  .left-arrow {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    background-color: #fff;
+    border-radius: 25%;
+    padding: 10px;
+  }
+  .right-arrow i {
+    color: black;
+  }
+  .left-arrow i {
+    color: black;
+  }
+  .balal {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 10px;
+  }
+  .card img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 12px;
+    object-fit: cover;
+  }
+  .price {
+    color:black;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    opacity: 0.8;
+  }
+  
+  .wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper .icon {
+    margin: 0 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+  }
+  .wrapper .icon span {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.l);
+  }
+  .wrapper .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+  }
+  .bizkimiz-info{
+    width: 1000px;
+    height: 300px;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 10px;
+  }
