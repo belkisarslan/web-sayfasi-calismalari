@@ -98,11 +98,6 @@ img {
     position: relative;
 }
 
-.main-header.blog {
-    background-image: url('../img/bg-2.jpeg');
-    height: 50vh;
-}
-
 .main-header .content {
     display: flex;
     flex-direction: column;
