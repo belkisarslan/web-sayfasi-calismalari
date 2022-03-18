@@ -24,7 +24,7 @@ ul {
 }
 
 a {
-    color: #333;
+    color: var(--warning);
     text-decoration: none;
 }
 
