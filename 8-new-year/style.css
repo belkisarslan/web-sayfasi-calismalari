@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background: url(https://picsum.photos/id/724/1370/650) no-repeat;
+    background: url(https://picsum.photos/id/724/1370/800) no-repeat;
 }
 header{
     min-height: 100vh;
@@ -42,14 +42,16 @@ header{
 .container{
     width: 300px;
     height: 330px;
-    border: 2px solid #fff;
     border-radius: 8px;
-    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-    opacity: 0.7;
     display: none;
 }
 p{
     text-align: center;
+    color: #fff;
+    box-shadow: 0 12px 20px 0 #dfe9f3, 0 6px 12px 0 white;
+    border-radius: 8px;
+    width: 170px;
+    font-family: 'Rubik Gemstones', cursive;
 }
 .container.show{
     display: block;
@@ -61,14 +63,13 @@ p{
     transform:scale(1.5);
   }
   .base {
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     border-radius: 2rem;
-     color:#f6f6f6; 
+    color:#f6f6f6; 
     width:8.8rem;
     position: relative;
     left:1rem;
     z-index:-1;
-    border: 2px solid #111;
+    box-shadow: 0 12px 20px 0 #dfe9f3, 0 6px 12px 0 white;
   }
   .body{
     position: relative;
@@ -78,7 +79,8 @@ p{
     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     border-radius: 300% 0% 0%;
     z-index:-3;
-    border: 2px solid #111;
+    box-shadow: 0 12px 20px 0 #dfe9f3, 0 6px 12px 0 white;
+    opacity: 0.7;
   }
   .ball{
     width:2rem;
@@ -89,6 +91,6 @@ p{
     left:69%;
     top:1rem;
     z-index:-1;
-    border: 2px solid #111;
+    box-shadow: 0 12px 20px 0 #dfe9f3, 0 6px 12px 0 white;
   }
   
