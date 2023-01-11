@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stick.css">
+    <title>February Calendar</title>
+</head>
+<body>
+    <div class="container">
+     <div id="dycalendar">
+
+     </div>
+    </div>
+
+    <div id="stickman-container" class="character-container">
+      <div class="head" id="man-head">
+        <div class="eye"></div>
+        <div class="eye2"></div>
+        <div class="mouth"></div>
+      </div>
+      <div class="body" id="man-body"></div>
+      <div class="left-hand" id="man-left-hand"></div>
+      <div class="left-leg" id="man-left-leg"></div>
+      <div class="right-leg" id="man-right-leg"></div>
+      <div class="right-hand-fold" id="right-hand-fold">
+        <div id="hand1"></div>
+        <div id="hand2"></div>
+      </div>
+    </div>
+    
+    <div id="heart">
+
+    </div>
+    
+    <div class="string"></div>
+    <div class="string2"></div>
+    <div class="string3"></div>
+    
+    <div id="stickwoman-container" class="character-container">
+        <div class="head-woman">
+            <div class="woman-eye"></div>
+            <div class="woman-eye2"></div>
+            <div class="mouth2"></div>
+        </div>
+        <div class="body-woman">
+            <div id="first"></div>
+            <div id="second"></div>
+            <div id="third"></div>
+        </div>
+     <div class="left-hand-woman"></div>
+     <div class="right-hand-woman"></div>
+     <div class="left-leg" id="woman-right-leg"></div>
+     <div class="right-leg" id="woman-left-leg"></div>
+    </div>
+
+    <div id="road"></div>
+
+
+
+
+    <script src="main.js"></script>
+    <script>
+        dycalendar.draw({
+        target: '#dycalendar',
+        type: 'month',
+        dayformat: 'full',
+        highlighttargetdate: false,
+        prevnextbutton: 'none'
+})
+    </script>
+</body>
+</html>

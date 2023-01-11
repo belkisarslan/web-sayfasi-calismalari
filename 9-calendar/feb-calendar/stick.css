@@ -1,0 +1,332 @@
+#stickman-container{
+    width: 150px;
+    height: 280px;
+    position: absolute;
+    right: 40%;
+    bottom: 70px;
+    background-color: transparent;
+}
+#stickman-container .head{
+    width: 80px;
+    height: 80px;
+    left: 35px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid black;
+    position: relative;
+}
+.eye {
+    margin: 20px;
+    width: 13px;
+    height: 13px;
+    border: solid 1px #000;
+    border-radius:  75% 15%;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 10px;
+}
+.eye:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: solid 1px #000;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    background-color: #000;
+}
+.eye2 {
+    margin: 20px;
+    width: 13px;
+    height: 13px;
+    border: solid 1px #000;
+    border-radius:  75% 15%;
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 2px;
+    right: 0;
+}
+.eye2:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: solid 1px #000;
+    border-radius: 50%;
+    left: 3px;
+    top: 3px;
+    background-color: #000;
+}
+.mouth{
+    margin: 14px;
+    width: 14px;
+    height: 20px;
+    border: solid 1px #000;
+    margin-top: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+}
+#stickman-container div{
+   position: absolute;
+   border-radius: 50%;
+}
+#stickman-container .body{
+    left: 73px;
+    top: 100px;
+    height: 70px;
+    width: 3px;
+    background-color: black;
+}
+#stickman-container .left-hand{
+    transform-origin: top;
+    transform: rotateZ(30deg);
+    top: 100px;
+    left: 73px;
+    width: 3px;
+    height: 80px;
+    background-color: black;
+}
+#stickman-container .right-hand-fold{
+    transform-origin: top;
+    transform: rotateZ(-30deg);
+    top: 100px;
+    left: 73px;
+    width: 3px;
+    height: 80px;
+    background-color: black;
+}
+#stickman-container .left-leg{
+    top: 170px;
+    left: 73px;
+    transform: rotateZ(25deg);
+    transform-origin: top;
+    width: 3px;
+    height: 80px;
+    background-color: black; 
+}
+#stickman-container .right-leg{
+    top: 170px;
+    left: 73px;
+    transform: rotateZ(-25deg);
+    transform-origin: top;
+    width: 3px;
+    height: 80px;
+    background-color: black; 
+}
+/******/
+#stickwoman-container{
+    width: 150px;
+    height: 280px;
+    position: absolute;
+    right: 10%;
+    bottom: 70px;
+    background-color: transparent;
+}
+#stickwoman-container .head-woman{
+    width: 80px;
+    height: 80px;
+    left: 35px;
+    top: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid black;
+    position: absolute;
+}
+.woman-eye {
+    margin: 20px;
+    width: 13px;
+    height: 13px;
+    border: solid 1px #000;
+    border-radius:  75% 15%;
+    position: absolute;
+    transform: rotate(40deg);
+    left: -12px;
+}
+.woman-eye:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: solid 1px #000;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+    background-color: #000;
+}
+.woman-eye2 {
+    margin: 20px;
+    width: 13px;
+    height: 13px;
+    border: solid 1px #000;
+    border-radius:  75% 15%;
+    position: absolute;
+    transform: rotate(40deg);
+    left: 10px;
+}
+.woman-eye2:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: solid 1px #000;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px; 
+    background-color: #000;
+}
+.mouth2 {
+    position: absolute;
+    background-color: black;
+    width: 20px;
+    height: 7px;
+    border-radius: 7px 7px 100px 100px;
+    left: 14px;
+    top: 52px; 
+  }
+#stickwoman-container .body-woman{
+    position: absolute;
+    height: 70px;
+    width: 50px;
+   
+}
+#stickwoman-container .body-woman div{
+    position: absolute;
+    width: 3px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: black;
+}
+#stickwoman-container .body-woman #first{
+    left: 75px;
+    top: 104px;
+    transform: rotateZ(15deg);
+    transform-origin: top;
+}
+#stickwoman-container .body-woman #second{
+    left: 75px;
+    top: 104px;
+    transform: rotateZ(-15deg);
+    transform-origin: top;
+}
+#stickwoman-container .body-woman #third{
+    left: 75px;
+    top: 150px;
+    height: 45px;
+    transform: rotateZ(90deg);
+}
+#stickwoman-container .left-hand-woman{
+    transform-origin: top;
+    transform: rotateZ(30deg);
+    top: 100px;
+    left: 73px;
+    width: 3px;
+    height: 80px;
+    background-color: black;
+    position: relative;
+}
+#stickwoman-container .right-hand-woman{
+    transform-origin: top;
+    transform: rotateZ(-30deg);
+    top: 100px;
+    left: 73px;
+    width: 3px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+}
+#woman-left-leg{
+    top: 170px;
+    left: 73px;
+    transform: rotateZ(25deg);
+    transform-origin: top;
+    width: 3px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+}
+#woman-right-leg{
+    top: 172px;
+    left: 73px;
+    transform: rotateZ(-25deg);
+    transform-origin: top;
+    width: 3px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+}
+#road{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    bottom: 95px;
+}
+#heart {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+    right: 30%;
+    top: 70px;
+}
+  
+#heart::before, #heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0;
+    background: red;
+}
+  
+#heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+  
+#heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.string{
+    position: absolute;
+    right: 33.5%;
+    top: 160px;
+    transform: rotateZ(25deg);
+    transform-origin: top;
+    width: 3px;
+    height: 80px;
+    border: dashed 2px red;
+}
+.string2{
+    position: absolute;
+    right: 36%;
+    top: 234px;
+    transform: rotateZ(25deg);
+    transform-origin: top;
+    width: 3px;
+    height: 80px;
+    border: dashed 2px red;
+}
+.string3{
+    position: absolute;
+    right: 40%;
+    top: 380px;
+    transform: rotateZ(25deg);
+    transform-origin: top;
+    width: 3px;
+    height: 80px;
+    border: dashed 2px red;
+}
