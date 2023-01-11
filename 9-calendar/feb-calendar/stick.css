@@ -323,10 +323,34 @@
 .string3{
     position: absolute;
     right: 40%;
-    top: 380px;
+    top: 360px;
     transform: rotateZ(25deg);
     transform-origin: top;
     width: 3px;
     height: 80px;
     border: dashed 2px red;
+}
+.mini-heart{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 8%;
+    top: 180px;
+    fill: red;
+}
+.mini-heart2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10%;
+    top: 230px;
+    fill: red;
+}
+.mini-heart3{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 11%;
+    top: 270px;
+    fill: red;
 }
