@@ -323,7 +323,7 @@
 .string3{
     position: absolute;
     right: 40%;
-    top: 360px;
+    top: 390px;
     transform: rotateZ(25deg);
     transform-origin: top;
     width: 3px;
@@ -353,4 +353,65 @@
     right: 11%;
     top: 270px;
     fill: red;
+}
+@media only screen and (max-width: 900px) {
+    #heart, .string, .string2, .string3{
+        display: none;
+    }
+    .eye {
+        margin: 20px;
+        width: 13px;
+        height: 13px;
+        border: solid 1px #000;
+        border-radius:  75% 15%;
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 10px;
+    }
+    .eye:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border: solid 1px #000;
+        border-radius: 50%;
+        left: 3px;
+        top: 3px;
+        background-color: #000;
+    }
+    .eye2 {
+        margin: 20px;
+        width: 13px;
+        height: 13px;
+        border: solid 1px #000;
+        border-radius:  75% 15%;
+        position: absolute;
+        transform: rotate(-90deg);
+        margin-left: 2px;
+        right: 3px;
+        top: 8px;
+        right: 0;
+    }
+    .eye2:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border: solid 1px #000;
+        border-radius: 50%;
+        left: 3px;
+        top: 3px;
+        background-color: #000;
+    }
+    .mouth{
+        position: absolute;
+        background-color: black;
+        width: 20px;
+        height: 7px;
+        border-radius: 7px 7px 100px 100px;
+        left: 14px;
+        top: 52px; 
+    }
 }
