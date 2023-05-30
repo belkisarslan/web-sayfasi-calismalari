@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    --head-from-color: #35d399;
+    --head-to-color: #fbe048;
+    --body-color: #1b2728;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(var(--body-color), #000 60%);
+}
+
+h1{
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, var(--head-from-color), var(--head-to-color));
+    color: transparent;
+    font-size: 120px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    .col{
+        background: rgba(255, 255, 255, .05);
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 40px;
+        gap: 5px;
+        cursor: pointer;
+        transition: 230ms all;
+        &:hover{
+            transform: scale(1.04);
+        }
+        &:first-child{
+            border-radius: 40px 5px 5px 40px;
+        }
+        &:last-child{
+            border-radius: 5px 40px 40px 5px;
+        }
+        & h6{
+            color: #fff;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        & p{
+            color: rgba(255, 255, 255, .5);
+            font-size: 16px;
+        }
+        & button{
+            background-color: #fff;
+            height: 40px;
+            padding: 0 25px;
+            font-size: 16px;
+            border-radius: 20px;
+            margin-top: 10px;
+            transition: 230ms all;
+        }
+        &:hover {
+            background: rgba(255, 255, 255, .1);
+            & button{
+                background-color: var(--head-from-color);
+                color: #fff;
+            }
+        }
+    }
+}
+
+body:has(.col:nth-child(1):hover){
+    --head-from-color: #DC524B;
+    --head-to-color: #F5C9C8;
+    --body-color:#281b1b;
+}
+body:has(.col:nth-child(2):hover){
+    --head-from-color: #4D80EE;
+    --head-to-color: #C2D8FA;
+    --body-color:#1b2028;
+}
+body:has(.col:nth-child(3):hover){
+    --head-from-color: #9D59EE;
+    --head-to-color: #E4D3FB;
+    --body-color:#261b28;
+}
+.grid:has(.col:hover) .col:not(:hover) button{
+    background: rgba(255, 255, 255, .05);
+    color: #fff;
+}
