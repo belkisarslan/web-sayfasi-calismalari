@@ -1,0 +1,88 @@
+{
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/eyiSLRh44SKKWIJ6bxWq8z1sscB.jpg",
+        "genre_ids": [53, 27, 80],
+        "id": 899294,
+        "original_language": "en",
+        "original_title": "Frank and Penelope",
+        "overview": "A tale of love and violence when a man on his emotional last legs finds a savior seductively dancing in a run-down strip club. And a life most certainly headed off a cliff suddenly becomes redirected - as everything is now worth dying for.",
+        "popularity": 1196.936,
+        "poster_path": "/5NpXoAi3nEQkEgLO09nmotPfyNa.jpg",
+        "release_date": "2022-06-03",
+        "title": "Frank and Penelope",
+        "video": false,
+        "vote_average": 7.3,
+        "vote_count": 32
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/yNib9QAiyaopUJbaayKQ2xK7mYf.jpg",
+        "genre_ids": [18, 28, 10752],
+        "id": 966220,
+        "original_language": "uk",
+        "original_title": "Снайпер. Білий ворон",
+        "overview": "Mykola is an eccentric pacifist who wants to be useful to humanity. When the war begins at Donbass, Mykola’s naive world is collapsing as the militants kill his pregnant wife and burn his home to the ground. Recovered, he makes a cardinal decision and gets enlisted in a sniper company. Having met his wife’s killers, he emotionally breaks down and arranges “sniper terror” for the enemy. He’s saved from a senseless death by his instructor who himself gets mortally wounded. The death of a friend leaves a “scar” and Mykola is ready to sacrifice his life.",
+        "popularity": 2040.458,
+        "poster_path": "/lZOODJzwuQo0etJJyBBZJOSdZcW.jpg",
+        "release_date": "2022-05-03",
+        "title": "Sniper: The White Raven",
+        "video": false,
+        "vote_average": 7.4,
+        "vote_count": 125
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/au4HUSWDRadIcl9CqySlw1kJMfo.jpg",
+        "genre_ids": [80, 28, 53],
+        "id": 829799,
+        "original_language": "en",
+        "original_title": "Paradise City",
+        "overview": "Renegade bounty hunter Ryan Swan must carve his way through the Hawaiian crime world to wreak vengeance on the kingpin who murdered his father.",
+        "popularity": 1969.521,
+        "poster_path": "/xdmmd437QdjcCls8yCQxrH5YYM4.jpg",
+        "release_date": "2022-11-11",
+        "title": "Paradise City",
+        "video": false,
+        "vote_average": 5.5,
+        "vote_count": 16
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/u9Io1hVnxb2b3T0z99aOK8sq0SN.jpg",
+        "genre_ids": [9648, 12, 80],
+        "id": 829280,
+        "original_language": "en",
+        "original_title": "Enola Holmes 2",
+        "overview": "Now a detective-for-hire like her infamous brother, Enola Holmes takes on her first official case to find a missing girl, as the sparks of a dangerous conspiracy ignite a mystery that requires the help of friends — and Sherlock himself — to unravel.",
+        "popularity": 1398.461,
+        "poster_path": "/tegBpjM5ODoYoM1NjaiHVLEA0QM.jpg",
+        "release_date": "2022-11-04",
+        "title": "Enola Holmes 2",
+        "video": false,
+        "vote_average": 7.7,
+        "vote_count": 1093
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/707thQazLJiYLBhCrZlRoV05NNL.jpg",
+        "genre_ids": [28, 18, 53],
+        "id": 948276,
+        "original_language": "fr",
+        "original_title": "Balle perdue 2",
+        "overview": "Having cleared his name, genius mechanic Lino has only one goal in mind: getting revenge on the corrupt cops who killed his brother and his mentor.",
+        "popularity": 1417.431,
+        "poster_path": "/uAeZI1JJbLPq7Bu5dziH7emHeu7.jpg",
+        "release_date": "2022-11-10",
+        "title": "Lost Bullet 2",
+        "video": false,
+        "vote_average": 6.8,
+        "vote_count": 117
+      }
+  
+     
+    ],
+    "total_pages": 36052,
+    "total_results": 721023
+  }
