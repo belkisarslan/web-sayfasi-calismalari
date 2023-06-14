@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root{
+    --line-border-fill: #4f772d;
+    --line-border-empty: #d6ce93;
+    --line-border-honey: #f8e16c;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+h1{
+    position: absolute;
+    top: 50px;
+    color: var(--line-border-honey);
+    text-shadow: 1px 1px 2px black, 0 0 25px var(--line-border-fill), 0 0 5px var(--line-border-honey);   
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    width: 500px;
+    max-width: 100%;
+}
+
+.progress-container::before{
+    content: '';
+    background-color: var(--line-border-empty);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.progress{
+    background-color: var(--line-border-fill);
+    height: 4px;
+    width: 0%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.circle{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 60px;
+    width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: 0.4s ease;
+}
+
+.circle.active{
+    color: #fff;
+    border-color: var(--line-border-fill);
+    box-shadow: inset 0px 33px 25px 0 var(--line-border-fill), 
+    inset 0 66px 15px 0px var(--line-border-honey),
+    inset 0 99px 5px 0px #90a955;;
+}
+
+
+.btn{
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 24px;
+    font-size: 14px;
+    margin: 5px;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: var(--line-border-empty);
+}
