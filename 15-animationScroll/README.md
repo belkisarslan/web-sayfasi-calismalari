@@ -1,0 +1,1 @@
+live: https://belkisarslan.github.io/web-sayfasi-calismalari/15-animationScroll/
