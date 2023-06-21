@@ -90,3 +90,47 @@ decreaseBtn.addEventListener('click', () => {
 clearBtn.addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
 })
+
+ const navIcon = document.querySelector(".nav-icon")
+ const ul = document.querySelector("ul")
+
+ navIcon.addEventListener("click", ()=>{
+  if(ul.classList.contains("menu")){
+    ul.classList.remove("menu")
+    navIcon.style.color = "blue"
+  }else{
+    ul.classList.add("menu")
+    navIcon.style.color = "rebeccapurple"
+  }
+ })
+
+ const img1 = document.querySelector(".img1")
+ const img2 = document.querySelector(".img2")
+ const img3 = document.querySelector(".img3")
+ const img4 = document.querySelector(".img4")
+ const toolbar = document.querySelector(".toolbar")
+
+ img1.addEventListener("click", ()=>{
+  canvas.classList.add("img1-back")
+  canvas.classList.remove("img2-back","img3-back","img4-back")
+  toolbar.classList.add("toolbar-1")
+  toolbar.classList.remove("toolbar-2","toolbar-3", "toolbar-4")
+ })
+ img2.addEventListener("click", ()=>{
+  canvas.classList.add("img2-back")
+  canvas.classList.remove("img1-back","img3-back","img4-back")
+  toolbar.classList.add("toolbar-2")
+  toolbar.classList.remove("toolbar-1","toolbar-3", "toolbar-4")
+ })
+ img3.addEventListener("click", ()=>{
+  canvas.classList.add("img3-back")
+  canvas.classList.remove("img1-back","img2-back","img4-back")
+  toolbar.classList.add("toolbar-3")
+  toolbar.classList.remove("toolbar-1","toolbar-2", "toolbar-4")
+ })
+ img4.addEventListener("click", ()=>{
+  canvas.classList.add("img4-back")
+  canvas.classList.remove("img1-back","img2-back","img3-back")
+  toolbar.classList.add("toolbar-4")
+  toolbar.classList.remove("toolbar-1","toolbar-2", "toolbar-3")
+ })
