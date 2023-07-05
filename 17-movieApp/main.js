@@ -13,15 +13,17 @@ h1.addEventListener('click', ()=>{
   window.location.reload()
 })
 
-getMovies(API_URL)
 
-async function getMovies(url) {
+
+const getMovies = async(url) => {
   const res = await fetch(url)
   const data = await res.json()
 
   //console.log(data.results)
   showMovies(data.results)
 }
+
+getMovies(API_URL)
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
