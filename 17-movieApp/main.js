@@ -9,10 +9,7 @@ const search = document.getElementById('search')
 const main = document.getElementById('main')
 const h1 = document.getElementById('h1')
 
-h1.addEventListener('click', ()=>{
-  window.location.reload()
-})
-
+//yemin ederim localde çalışıyor :)
 getMovies(API_URL)
 
 async function getMovies(url){
@@ -78,3 +75,7 @@ function getClassByRate(vote) {
     return 'red'
   }
 }
+
+h1.addEventListener('click', ()=>{
+  window.location.reload()
+})
