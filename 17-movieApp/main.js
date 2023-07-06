@@ -15,7 +15,7 @@ h1.addEventListener('click', ()=>{
 
 
 
-const getMovies = async(url) => {
+async function getMovies(url){
   const res = await fetch(url)
   const data = await res.json()
 
